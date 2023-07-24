@@ -1,0 +1,115 @@
+.post {
+
+    &__rows {}
+
+    &-header {
+        display: flex;
+        justify-content: space-between;
+        background-color: #474955;
+        color: #FFF;
+        font-family: Roboto;
+        font-size: 0.875rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 137.687%;
+        padding: 19px 11px 16px;
+
+        &__item {
+            display: flex;
+            cursor: pointer;
+        }
+
+        &__id {
+            display: flex;
+            justify-content: center;
+            flex: 0 1 10.223%;
+
+
+            & span {
+                display: block;
+                margin-right: 39px;
+            }
+        }
+
+        &__title {
+            display: flex;
+            justify-content: center;
+            flex: 0 1 48.234%;
+
+            & span {
+                display: block;
+                margin-right: 34px;
+            }
+        }
+
+        &__text {
+            display: flex;
+            justify-content: center;
+            flex: 0 1 40.148%;
+
+            & span {
+                display: block;
+                margin-right: 25px;
+            }
+        }
+    }
+
+}
+
+.pagination {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 16px;
+
+    &__prev,
+    &__next {
+        color: #474955;
+        font-family: Roboto;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 137.687%;
+    }
+
+    &__rooms {}
+
+    &__number {
+        color: #474955;
+        font-family: Roboto;
+        font-size: 18px;
+        font-style: italic;
+        font-weight: 700;
+        line-height: 137.687%;
+        padding: 0 4px;
+
+        &-green {
+            color: #7EBC3C;
+        }
+    }
+}
+
+
+.post__search {
+    width: 58.643%;
+    padding: 16px 24px 15px 26px;
+    margin-bottom: 15px;
+    background: #5A5C66;
+    display: flex;
+    justify-content: space-between;
+}
+
+.search__input {
+    color: #B2B7BF;
+    background: #5A5C66;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 137.687%;
+    width: 100%;
+    padding-right: 10px;
+
+    &::placeholder {
+        color: #B2B7BF;
+    }
+}
