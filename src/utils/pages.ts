@@ -1,5 +1,5 @@
 import { useMemo } from "react";
-import { ESorting, IPost, EPost } from "../models/IPost";
+import { ESorting, IPost } from "../models/IPost";
 
 export const getPageCount = (totalCount: number, limit: number) => {
   return Math.ceil(totalCount / limit);

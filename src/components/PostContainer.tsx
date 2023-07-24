@@ -12,6 +12,7 @@ import {
 } from "../utils/pages";
 import PostItem from "./PostItem";
 import { ESorting, IPost } from "../models/IPost";
+import PostPagination from "./PostPagination";
 
 function PostContainer() {
   const [sortind, setSortind] = useState<ESorting | null>(null);
@@ -90,41 +91,12 @@ function PostContainer() {
         </div>
       </div>
 
-      <div className="pagination">
-        <button
-          className={
-            page === 1 ? "pagination__prev disabled" : "pagination__prev"
-          }
-          onClick={() => setPage(page - 1)}
-        >
-          Назад
-        </button>
-        <div className="pagination__rooms">
-          {pagesArrey.map((p) => (
-            <button
-              onClick={() => setPage(p)}
-              className={
-                page === p
-                  ? "pagination__number pagination__number-green"
-                  : "pagination__number"
-              }
-              key={p}
-            >
-              {p}
-            </button>
-          ))}
-        </div>
-        <button
-          className={
-            page === totalPages
-              ? "pagination__next disabled"
-              : "pagination__next"
-          }
-          onClick={() => setPage(page + 1)}
-        >
-          Далее
-        </button>
-      </div>
+      <PostPagination
+        page={page}
+        setPage={setPage}
+        pagesArrey={pagesArrey}
+        totalPages={totalPages}
+      ></PostPagination>
     </div>
   );
 }

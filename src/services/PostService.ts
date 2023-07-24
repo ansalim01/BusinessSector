@@ -13,7 +13,6 @@ export const PostApi = createApi({
   }),
 
   endpoints: (build) => ({
-    // fetchAllPosts: build.query<IPost[], TFetchAllPosts>({
     fetchAllPosts: build.query<IPost[], number>({
       query: () => ({
         url: "/posts",

@@ -1,0 +1,31 @@
+.pagination {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 16px;
+
+    &__prev,
+    &__next {
+        color: #474955;
+        font-family: Roboto;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 137.687%;
+    }
+
+    &__rooms {}
+
+    &__number {
+        color: #474955;
+        font-family: Roboto;
+        font-size: 18px;
+        font-style: italic;
+        font-weight: 700;
+        line-height: 137.687%;
+        padding: 0 4px;
+
+        &-green {
+            color: #7EBC3C;
+        }
+    }
+}
